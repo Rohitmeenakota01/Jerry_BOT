@@ -79,7 +79,7 @@ Here is the help for my COMMANDS."""
 
     SOURCE_TXT = """<b>NOTE:</b>
 - Its a private property.
-- 👑 OWNER : @Rohitmeen
+- 👑 OWNER : <a href=https://t.me/Rohitmeena_official>Rohit Meena</a>
 
 <b>DEV:</b>
 - 🦋 <a href=https://t.me/LazyDeveloper>LazyDeveloper</a> 🦋"""
