@@ -66,8 +66,6 @@ class temp(object):
 #     return False
 
 async def is_subscribed(bot, query):
-    if await db.find_join_req(query.from_user.id):
-        return True
     try:
         user = await bot.get_chat_member(AUTH_CHANNEL, query.from_user.id)
     except UserNotParticipant:
