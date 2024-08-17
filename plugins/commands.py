@@ -73,7 +73,7 @@ async def start(client, message):
         return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
         try:
-            invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL),  creates_join_request=True)
+            invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL))
         except ChatAdminRequired:
             logger.error("Hey Sona, Ek dfa check kr lo ki main Channel mei Add hu ya nhi...!")
             return
