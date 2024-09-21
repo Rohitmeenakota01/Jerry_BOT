@@ -2305,10 +2305,10 @@ async def auto_filter(client, msg, spoll=False):
     waiting_message = await message.reply_text(f"Setting up your request {full_name}...")
     await asyncio.sleep(1)
     await waiting_message.delete()
-    serve_message = await message.reply_sticker(sticker=random.choice(lazystickerset))
+    # serve_message = await message.reply_sticker(sticker=random.choice(lazystickerset))
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
-    await serve_message.delete()
+    # await serve_message.delete()
     # waiting overs here @LazyDeveloperr
 
     if imdb:
@@ -2374,8 +2374,8 @@ async def auto_filter(client, msg, spoll=False):
         if SELF_DELETE:
             await asyncio.sleep(SELF_DELETE_SECONDS)
             await p.delete()
-            thanks = await message.reply_text(f"♥ Thank you **{message.from_user.mention}**...\n<code>🎉 we love you 🎊</code>")
-            embrace = await thanks.reply_sticker(sticker=random.choice(lazystickerset))
+            # thanks = await message.reply_text(f"♥ Thank you **{message.from_user.mention}**...\n<code>🎉 we love you 🎊</code>")
+            # embrace = await thanks.reply_sticker(sticker=random.choice(lazystickerset))
 
     if spoll:
         await msg.message.delete()
